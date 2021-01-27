@@ -1,0 +1,14 @@
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\bin\Debug\ProcessSA.BLL.dll
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\bin\Debug\ProcessSA.BLL.pdb
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\bin\Debug\ProcessSA.DAL.dll
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\bin\Debug\ConexionBD.dll
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\bin\Debug\ProcessSA.DAL.pdb
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\bin\Debug\ProcessSA.DAL.dll.config
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\bin\Debug\ConexionBD.pdb
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\bin\Debug\ConexionBD.dll.config
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\obj\Debug\ProcessSA.BLL.csprojAssemblyReference.cache
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\obj\Debug\ProcessSA.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\obj\Debug\ProcessSA.BLL.csproj.CopyComplete
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\obj\Debug\ProcessSA.BLL.dll
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ProcessSA.BLL\obj\Debug\ProcessSA.BLL.pdb

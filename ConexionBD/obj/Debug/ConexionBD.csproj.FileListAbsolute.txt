@@ -1,0 +1,9 @@
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ConexionBD\bin\Debug\ConexionBD.dll.config
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ConexionBD\bin\Debug\ConexionBD.dll
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ConexionBD\bin\Debug\ConexionBD.pdb
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ConexionBD\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ConexionBD\obj\Debug\ConexionBD.csprojAssemblyReference.cache
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ConexionBD\obj\Debug\ConexionBD.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ConexionBD\obj\Debug\ConexionBD.csproj.CopyComplete
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ConexionBD\obj\Debug\ConexionBD.dll
+C:\Users\Felipe\Desktop\Portafolio\Desarrollo\APP Escritorio\SolucionProcessSA\ConexionBD\obj\Debug\ConexionBD.pdb

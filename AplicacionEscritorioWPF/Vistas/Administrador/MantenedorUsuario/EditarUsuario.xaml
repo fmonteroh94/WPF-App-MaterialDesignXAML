@@ -1,0 +1,57 @@
+﻿<Window x:Class="AplicacionEscritorioWPF.Vistas.Administrador.MantenedorUsuario.EditarUsuario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AplicacionEscritorioWPF.Vistas.Administrador.MantenedorUsuario"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="EditarUsuario" Height="600" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="156,13,150,10" FontSize="40" FontFamily="Calibri" Height="77">Editar usuario</TextBlock>
+        <StackPanel Grid.Row="1">
+            <Grid Width="300">
+                <TextBox x:Name="txtCodigo" Visibility="Hidden"></TextBox>
+                <TextBox x:Name="txtNombres" materialDesign:HintAssist.Hint="Nombres" Padding="5" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            </Grid>
+            <Grid Width="300">
+                <TextBox x:Name="txtMaterno" materialDesign:HintAssist.Hint="Apellido Materno" Padding="5" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            </Grid>
+            <Grid Width="300">
+                <TextBox x:Name="txtPass" materialDesign:HintAssist.Hint="Contraseña" Padding="5" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            </Grid>
+            <Grid Width="300">
+                <TextBox x:Name="txtEmail" materialDesign:HintAssist.Hint="Correo electrónico" Padding="5" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            </Grid>
+            <Grid Width="300" Margin="0 20 0 0">
+                <ComboBox x:Name="cbxCargo" materialDesign:ComboBoxAssist.ShowSelectedItem="true" materialDesign:HintAssist.Hint="Cargo" Style="{StaticResource MaterialDesignFloatingHintComboBox}" SelectedValue="{Binding IDCARGO}"></ComboBox>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <Grid Width="300" Margin="-50 0 0 0">
+                <TextBox x:Name="txtPaterno" materialDesign:HintAssist.Hint="Apellido Paterno" Padding="5" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0,0,10,0"/>
+            </Grid>
+            <Grid Width="300" Margin="-50 0 0 0">
+                <TextBox x:Name="txtUsuario" materialDesign:HintAssist.Hint="Nombre de usuario" Padding="5" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0,0,10,0"/>
+            </Grid>
+            <Grid Width="300" Margin="-50 0 0 0">
+                <TextBox x:Name="txtPass2" materialDesign:HintAssist.Hint="Confirmar Contraseña" Padding="5" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+            </Grid>
+            <Grid Width="300" Margin="-50 20 0 0">
+                <ComboBox x:Name="cbxPerfil" materialDesign:ComboBoxAssist.ShowSelectedItem="true" materialDesign:HintAssist.Hint="Perfil de Usuario" Style="{StaticResource MaterialDesignFloatingHintComboBox}" SelectedValue="{Binding IDPERFIL}"></ComboBox>
+            </Grid>
+            <Grid Width="300" Margin="-50 20 0 0">
+                <ComboBox x:Name="cbxEmpresa" materialDesign:ComboBoxAssist.ShowSelectedItem="true" materialDesign:HintAssist.Hint="Empresa" Style="{StaticResource MaterialDesignFloatingHintComboBox}" SelectedValue="{Binding IDEMPRESA}"></ComboBox>
+            </Grid>
+        </StackPanel>
+        <Button x:Name="btnConfirmar" Content="Confirmar" Grid.ColumnSpan="2" Width="120" Grid.Row="1" Margin="322,360,328,70" Background="DodgerBlue" BorderBrush="DodgerBlue" Click="btnConfirmar_Click"></Button>
+    </Grid>
+</Window>

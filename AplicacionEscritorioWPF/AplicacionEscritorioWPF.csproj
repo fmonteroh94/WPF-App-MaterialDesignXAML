@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{332F89F4-8ABF-4D19-BA46-324366D2DB4F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AplicacionEscritorioWPF</RootNamespace>
+    <AssemblyName>AplicacionEscritorioWPF</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.2.7.1979, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.2.7\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=3.2.0.1979, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.3.2.0\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="VistaModelo\Encriptacion.cs" />
+    <Compile Include="VistaModelo\SubItemMenu.cs" />
+    <Compile Include="VistaModelo\ItemMenu.cs" />
+    <Compile Include="Vistas\Administrador\Inicio.xaml.cs">
+      <DependentUpon>Inicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorCargo\AgregarCargo.xaml.cs">
+      <DependentUpon>AgregarCargo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorCargo\EditarCargo.xaml.cs">
+      <DependentUpon>EditarCargo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorCargo\VistaCargo.xaml.cs">
+      <DependentUpon>VistaCargo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\AgregarEmpresa.xaml.cs">
+      <DependentUpon>AgregarEmpresa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\EditarEmpresa.xaml.cs">
+      <DependentUpon>EditarEmpresa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\MantenedorArea\AgregarArea.xaml.cs">
+      <DependentUpon>AgregarArea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\MantenedorArea\EditarArea.xaml.cs">
+      <DependentUpon>EditarArea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\MantenedorArea\ListarAreas.xaml.cs">
+      <DependentUpon>ListarAreas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\MantenedorDepartamento\AgregarDepartamento.xaml.cs">
+      <DependentUpon>AgregarDepartamento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\MantenedorDepartamento\EditarDepartamento.xaml.cs">
+      <DependentUpon>EditarDepartamento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\MantenedorDepartamento\ListarDepartamentos.xaml.cs">
+      <DependentUpon>ListarDepartamentos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\MantenedorFuncion\AgregarFuncion.xaml.cs">
+      <DependentUpon>AgregarFuncion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\MantenedorFuncion\EditarFuncion.xaml.cs">
+      <DependentUpon>EditarFuncion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\MantenedorFuncion\ListarFunciones.xaml.cs">
+      <DependentUpon>ListarFunciones.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorEmpresa\VistaEmpresa.xaml.cs">
+      <DependentUpon>VistaEmpresa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorPerfil\AgregarPerfil.xaml.cs">
+      <DependentUpon>AgregarPerfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorPerfil\EditarPerfil.xaml.cs">
+      <DependentUpon>EditarPerfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorPerfil\VistaPerfil.xaml.cs">
+      <DependentUpon>VistaPerfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorUsuario\AgregarUsuario.xaml.cs">
+      <DependentUpon>AgregarUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorUsuario\EditarUsuario.xaml.cs">
+      <DependentUpon>EditarUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\MantenedorUsuario\VistaUsuario.xaml.cs">
+      <DependentUpon>VistaUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\PanelControl.xaml.cs">
+      <DependentUpon>PanelControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Disennador\Dashboard.xaml.cs">
+      <DependentUpon>Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Disennador\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Disennador\MantenedorFlujoTarea\AgregarFlujoTarea.xaml.cs">
+      <DependentUpon>AgregarFlujoTarea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Disennador\MantenedorFlujoTarea\EditarFlujoTarea.xaml.cs">
+      <DependentUpon>EditarFlujoTarea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Disennador\MantenedorFlujoTarea\VistaFlujoTarea.xaml.cs">
+      <DependentUpon>VistaFlujoTarea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Menu\MenuControlUsuario.xaml.cs">
+      <DependentUpon>MenuControlUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Menu\MenuUsuarioDisennador.xaml.cs">
+      <DependentUpon>MenuUsuarioDisennador.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Vistas\Administrador\Inicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorCargo\AgregarCargo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorCargo\EditarCargo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorCargo\VistaCargo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\AgregarEmpresa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\EditarEmpresa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\MantenedorArea\AgregarArea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\MantenedorArea\EditarArea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\MantenedorArea\ListarAreas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\MantenedorDepartamento\AgregarDepartamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\MantenedorDepartamento\EditarDepartamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\MantenedorDepartamento\ListarDepartamentos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\MantenedorFuncion\AgregarFuncion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\MantenedorFuncion\EditarFuncion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\MantenedorFuncion\ListarFunciones.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorEmpresa\VistaEmpresa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorPerfil\AgregarPerfil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorPerfil\EditarPerfil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorPerfil\VistaPerfil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorUsuario\AgregarUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorUsuario\EditarUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\MantenedorUsuario\VistaUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\PanelControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Disennador\Dashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Disennador\Index.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Disennador\MantenedorFlujoTarea\AgregarFlujoTarea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Disennador\MantenedorFlujoTarea\EditarFlujoTarea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Disennador\MantenedorFlujoTarea\VistaFlujoTarea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Menu\MenuControlUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Menu\MenuUsuarioDisennador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProcessSA.BLL\ProcessSA.BLL.csproj">
+      <Project>{a98d1415-9adb-4780-af23-1d68cd8c69d5}</Project>
+      <Name>ProcessSA.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProcessSA.DAL\ProcessSA.DAL.csproj">
+      <Project>{551a3e53-f138-4ae8-b52a-a043369e7cfa}</Project>
+      <Name>ProcessSA.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\img\img_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\img\img_logo2.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.3.2.0\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>
